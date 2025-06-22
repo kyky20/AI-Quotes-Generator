@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+</head>
+
+<body class="gradient-background">
+    <div class="container glass-card">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo" width="80" height="80">
+        </div>
+        <h1 class="animated-gradient-text">AI Quotes Generator</h1>
+        <p class="subtitle">Dapatkan quotes inspiratif dengan kekuatan AI</p>
+
+        <div class="quote-controls">
+            <input type="text" id="topicInput" class="topic-input"
+                placeholder="Masukkan topik atau tema quotes (misal: motivasi, cinta, kesuksesan...)">
+            <button onclick="generateQuote()" id="generateBtn" class="generate-btn">
+                Generate Quote
+            </button>
+        </div>
+
+        <div class="quote-display" id="quoteDisplay">
+            <div class="placeholder-text">
+                Quote Anda akan muncul di sini...
+            </div>
+        </div>
+
+        <div class="actions" id="actions" style="display: none;">
+            <button onclick="copyQuote()" class="action-btn">📋 Copy</button>
+            <button onclick="shareQuote()" class="action-btn">📤 Share</button>
+            <button onclick="generateQuote()" class="action-btn">🔄 Generate Lagi</button>
+        </div>
+
+        <div id="statusMessage" class="status-message" style="display: none;"></div>
+
+        <footer>
+            <p>© 2025 <img src="assets/logo.png" alt="logo" class="footer-logo"> AI Quotes Generator.</p>
+        </footer>
+    </div>
+    <!-- <div class="container glass-card">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo" width="80" height="80">
+        </div>
+        <h1>AI Quotes Generator</h1>
+        <p class="subtitle">Dapatkan quotes inspiratif dengan kekuatan AI</p>
+        
+
+
+        <div class="quote-controls">
+            <input type="text" id="topicInput" class="topic-input" placeholder="Masukkan topik atau tema quotes (misal: motivasi, cinta, kesuksesan...)">
+            <button onclick="generateQuote()" id="generateBtn" class="generate-btn">
+                Generate Quote
+            </button>
+        </div>
+
+        <div class="quote-display" id="quoteDisplay">
+            <div class="placeholder-text">
+                Quote Anda akan muncul di sini...
+            </div>
+        </div>
+
+        <div class="actions" id="actions" style="display: none;">
+            <button onclick="copyQuote()" class="action-btn">📋 Copy</button>
+            <button onclick="shareQuote()" class="action-btn">📤 Share</button>
+            <button onclick="generateQuote()" class="action-btn">🔄 Generate Lagi</button>
+        </div>
+
+        <div id="statusMessage" class="status-message" style="display: none;"></div>
+    
+        <footer>
+            <p>© 2025 <img src="assets/logo.png" alt="logo" class="footer-logo"> AI Quotes Generator.</p>
+        </footer>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
