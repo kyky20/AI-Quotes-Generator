@@ -1,5 +1,5 @@
 let currentQuote = '';
-let apiKey = 'AIzaSyAynOvXpKEvEXX-XGEAdyvUHWtUp9vIq0s'; // Ganti dengan API Key milikmu
+let apiKey = 'AIzaSyAynOvXpKEvEXX-XGEAdyvUHWtUp9vIq0s'; 
 
 // Load page
 window.addEventListener('load', () => {
