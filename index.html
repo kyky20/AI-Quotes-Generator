@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="HLLmsE6Zz_f90RlIVA-0ocQLxgN0Zhga4Atuo7wGzxE" />
-    <meta name="google-adsense-account" content="ca-pub-8835524627276883">
-    <title>Quotes Generator</title>
+    <title>Quotes Generator Online - Buat Kutipan Inspiratif Gratis</title>
+    <meta name="description" content="Quotes Generator online gratis. Buat kutipan motivasi dan inspiratif dengan satu klik. Tidak perlu login, cepat dan mudah.">
+    <meta name="keywords" content="quotes generator online, pembuat kutipan, kutipan motivasi, kutipan inspiratif, generator quotes, quote maker">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Quotes Generator Online - Buat Kutipan Instan">
+    <meta property="og:description" content="Buat kutipan inspiratif dan keren hanya dengan satu klik. Gratis dan mudah digunakan!">
+    <meta property="og:url" content="https://quotes-generator-v2.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://quotes-generator-v2.vercel.app/assets/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8835524627276883"
-     crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-8835524627276883">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8835524627276883" crossorigin="anonymous"></script>
 </head>
 
 <body class="gradient-background">
     <div class="container glass-card">
         <div class="logo">
-            <img src="assets/logo.png" alt="Logo" width="80" height="80">
+            <img src="assets/logo.png" alt="Logo AI Quotes Generator" width="80" height="80">
         </div>
-        <h1 class="animated-gradient-text">AI Quotes Generator</h1>
-        <p class="subtitle">Dapatkan quotes inspiratif dengan kekuatan AI</p>
-
+        <h1 class="animated-gradient-text">Quotes Generator Online</h1>
+        <p class="subtitle">
+            Buat kutipan motivasi dan inspirasi hanya dengan satu klik!
+        </p>
+        <p class="visually-hidden">
+            Selamat datang di Quotes Generator Online, alat pembuat kutipan otomatis berbasis AI. Hanya dengan satu
+            klik, kamu bisa mendapatkan kata-kata motivasi, cinta, kehidupan, dan inspirasi lainnya. Cocok untuk caption
+            media sosial, status, maupun kebutuhan harianmu!
+        </p>
         <div class="quote-controls">
             <input type="text" id="topicInput" class="topic-input"
                 placeholder="Masukkan topik atau tema quotes (misal: motivasi, cinta, kesuksesan...)">
@@ -28,26 +40,21 @@
                 Generate Quote
             </button>
         </div>
-
         <div class="quote-display" id="quoteDisplay">
             <div class="placeholder-text">
                 Quote Anda akan muncul di sini...
             </div>
         </div>
-
         <div class="actions" id="actions" style="display: none;">
             <button onclick="copyQuote()" class="action-btn">📋 Copy</button>
             <button onclick="shareQuote()" class="action-btn">📤 Share</button>
             <button onclick="generateQuote()" class="action-btn">🔄 Generate Lagi</button>
         </div>
-
         <div id="statusMessage" class="status-message" style="display: none;"></div>
-
         <footer>
             <p>© 2025 <img src="assets/logo.png" alt="logo" class="footer-logo"> AI Quotes Generator.</p>
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
