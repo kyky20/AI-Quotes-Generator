@@ -46,24 +46,8 @@ body {
     max-width: 800px;
     width: 100%;
     text-align: center;
-
-    /* Tambahan agar selalu di tengah */
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-}
-
-/* Responsif di Mobile */
-@media (max-width: 768px) {
-    .container.glass-card {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        margin: 20px auto;
-    }
+    position: relative;
+    overflow: hidden;
 }
 
 /* Optional shimmer effect */
