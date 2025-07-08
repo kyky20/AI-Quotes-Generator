@@ -152,7 +152,7 @@ h1 {
     clip: rect(0 0 0 0);
     white-space: nowrap;
     border: 0;
-}  
+}
 
 .quote-controls {
     display: grid;
@@ -378,5 +378,42 @@ footer {
 
     .api-key-container {
         flex-direction: column;
+    }
+}
+
+/* ads */
+/* Iklan atas agar rata tengah */
+#banner-top {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    z-index: 1000;
+}
+
+/* Iklan kiri */
+#ad-left {
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    width: 160px;
+    z-index: 9999;
+}
+
+/* Iklan kanan */
+#ad-right {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    width: 160px;
+    z-index: 9999;
+}
+
+/* Sembunyikan di layar kecil */
+@media (max-width: 768px) {
+
+    #ad-left,
+    #ad-right,
+    #banner-top {
+        display: none !important;
     }
 }
