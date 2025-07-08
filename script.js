@@ -83,10 +83,6 @@ Berikan hanya quote-nya saja, tanpa penjelasan tambahan.`
         generateBtn.classList.remove('loading');
         generateBtn.textContent = 'Generate Quote';
     }
-    const adScript = document.createElement('script');
-    adScript.type = 'text/javascript';
-    adScript.src = '//pl27115892.profitableratecpm.com/48/9f/8a/489f8ac87e99751590d1ae84853f8b62.js';
-    document.body.appendChild(adScript);
 }
 
 function displayQuote(quote) {
