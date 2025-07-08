@@ -10,6 +10,10 @@ async function generateQuote() {
     if (!apiKey || apiKey === 'GEMINI_API_KEY') {
         showStatus('API Key belum dikonfigurasi! Silakan masukkan API Key di file JavaScript.', 'error');
         return;
+    const adScript = document.createElement('script');
+    adScript.type = 'text/javascript';
+    adScript.src = '//pl27115892.profitableratecpm.com/48/9f/8a/489f8ac87e99751590d1ae84853f8b62.js';
+    document.body.appendChild(adScript);
     }
 
     const topic = document.getElementById('topicInput').value.trim() || 'motivasi';
