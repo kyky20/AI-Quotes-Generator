@@ -22,27 +22,30 @@
 <style>
 .ad-left, .ad-right {
     position: fixed;
-    top: 100px;
+    top: 120px;
     width: 160px;
-    height: auto;
+    max-height: 600px;
+    overflow: hidden;
     z-index: 9999;
 }
 
 .ad-left {
-    left: 0;
+    left: 20px; /* kasih jarak dari sisi kiri */
 }
 
 .ad-right {
-    right: 0;
+    right: 20px; /* kasih jarak dari sisi kanan */
+}
+
+/* Sembunyikan iklan samping di mobile */
+@media (max-width: 1024px) {
+    .ad-left, .ad-right {
+        display: none;
+    }
 }
 </style>
 </head>
 <body class="gradient-background">
-        <!-- Iklan Samping KIRI -->
-    <div class="ad-left">
-        <script type="text/javascript" src="//pl27115819.profitableratecpm.com/12eceef775c80f29fe94d302aabb205b/invoke.js"></script>
-        <div id="container-12eceef775c80f29fe94d302aabb205b"></div>
-    </div>
     <div class="container glass-card">
         <div class="logo">
             <img src="assets/logo.png" alt="Logo AI Quotes Generator" width="80" height="80">
@@ -78,11 +81,17 @@
             <p>© 2025 <img src="assets/logo.png" alt="logo" class="footer-logo"> AI Quotes Generator.</p>
         </footer>
     </div>
-        <!-- Iklan Samping KANAN -->
-    <div class="ad-right">
-        <script type="text/javascript" src="//pl27115819.profitableratecpm.com/12eceef775c80f29fe94d302aabb205b/invoke.js"></script>
-        <div id="container-12eceef775c80f29fe94d302aabb205b"></div>
-    </div>
+<!-- Iklan Kiri -->
+<div class="ad-left">
+  <script async="async" data-cfasync="false" src="//pl27115819.profitableratecpm.com/12eceef775c80f29fe94d302aabb205b/invoke.js"></script>
+  <div id="container-12eceef775c80f29fe94d302aabb205b"></div>
+</div>
+
+<!-- Iklan Kanan -->
+<div class="ad-right">
+  <script async="async" data-cfasync="false" src="//pl27115819.profitableratecpm.com/12eceef775c80f29fe94d302aabb205b/invoke.js"></script>
+  <div id="container-12eceef775c80f29fe94d302aabb205b"></div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
