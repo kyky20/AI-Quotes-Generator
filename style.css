@@ -379,3 +379,31 @@ footer {
         flex-direction: column;
     }
 }
+
+/* start ads */
+/* Wrapper iklan agar responsif dan rapi */
+.ad-wrapper {
+    width: 100%;
+    max-width: 728px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Agar iframe dalam iklan tidak melebihi layar */
+.ad-wrapper iframe {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+/* Sembunyikan iklan ini di layar kecil jika perlu */
+@media (max-width: 500px) {
+    .ad-wrapper {
+        max-width: 100%;
+    }
+}
+
+/* end ads */
