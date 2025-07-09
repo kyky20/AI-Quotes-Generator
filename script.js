@@ -58,6 +58,16 @@ Berikan hanya quote-nya saja, tanpa penjelasan tambahan.`
             currentQuote = data.candidates[0].content.parts[0].text.trim();
             displayQuote(currentQuote);
             showStatus('Quote berhasil dibuat!', 'success');
+
+            // ✅ Sisipkan iklan setelah berhasil generate quote
+            if (!document.getElementById('ads-after-generate')) {
+                const adScript = document.createElement('script');
+                adScript.type = 'text/javascript';
+                adScript.src = '//pl27115892.profitableratecpm.com/48/9f/8a/489f8ac87e99751590d1ae84853f8b62.js';
+                adScript.id = 'ads-after-generate';
+                document.body.appendChild(adScript);
+            }
+
         } else {
             throw new Error('Format response tidak valid');
         }
