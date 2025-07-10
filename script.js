@@ -59,14 +59,12 @@ Berikan hanya quote-nya saja, tanpa penjelasan tambahan.`
             displayQuote(currentQuote);
             showStatus('Quote berhasil dibuat!', 'success');
 
-            // ✅ Sisipkan iklan setelah berhasil generate quote
-            if (!document.getElementById('ads-after-generate')) {
-                const adScript = document.createElement('script');
-                adScript.type = 'text/javascript';
-                adScript.src = '//pl27115892.profitableratecpm.com/48/9f/8a/489f8ac87e99751590d1ae84853f8b62.js';
-                adScript.id = 'ads-after-generate';
-                document.body.appendChild(adScript);
-            }
+        // ✅ Sisipkan iklan popup di kanan bawah setiap kali generate quote
+        const adContainer = document.getElementById('ads-popup-container');
+        const adScript = document.createElement('script');
+        adScript.type = 'text/javascript';
+        adScript.src = '//pl27115892.profitableratecpm.com/48/9f/8a/489f8ac87e99751590d1ae84853f8b62.js';
+        adContainer.appendChild(adScript);
 
         } else {
             throw new Error('Format response tidak valid');
