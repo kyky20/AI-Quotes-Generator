@@ -379,3 +379,11 @@ footer {
         flex-direction: column;
     }
 }
+
+/* ads */
+/* Sembunyikan iklan saat layar mobile */
+@media screen and (max-width: 768px) {
+    .ads-desktop-only {
+        display: none !important;
+    }
+}
